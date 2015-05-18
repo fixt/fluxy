@@ -1,0 +1,15 @@
+{
+  "name": "fluxy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Garvis <cgarvis@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "events": "^1.0.2",
+    "flux": "^2.0.1"
+  }
+}
