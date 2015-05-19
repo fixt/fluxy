@@ -9,7 +9,7 @@ class Store extends EventEmitter {
     this.dispatchToken = dispatcher.register(payload => {
 
       this._handlers.forEach(handler => {
-        console.log(handler.key, payload.action);
+        console.log(payload.action, handler.key);
         if(payload.action == handler.key) {
           handler.fn(payload)
 

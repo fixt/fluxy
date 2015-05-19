@@ -4,9 +4,11 @@ class Actions {
   }
 
   dispatch() {
-    console.log(`Dispatching action: ${key}`);
+    var [key, payload] = arguments;
+    payload = payload || {};
 
-    var [key, ...payload] = arguments;
+    console.log(`Dispatching "${key}" with `, payload);
+
     payload.action = key;
     this.dispatcher.dispatch(payload);
   }
