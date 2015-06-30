@@ -4,6 +4,8 @@ const CHANGE_EVENT = 'CHANGE_EVENT';
 
 class Store extends EventEmitter {
   constructor(dispatcher) {
+    super();
+
     this._handlers = [];
 
     this.dispatchToken = dispatcher.register(payload => {
